@@ -12,7 +12,11 @@ Take the name after `ionic2-starter-`, and that is the name of the template to b
 
 ```bash
 $ sudo npm install -g ionic cordova
-$ ionic start mySideMenu sidemenu
+$ ionic start myProjectName sidemenu
+```
+Install Dependences inside folder project
+```bash
+$ npm install
 ```
 
 Then, to run it, cd into `mySideMenu` and run:
