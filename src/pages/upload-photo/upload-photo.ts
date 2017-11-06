@@ -108,7 +108,8 @@ savephotoURL(){
   let imageURL = url
   return imageURL
 }).then((imageURL) => {
-  this.database.doc(`ProfileUser/${currentUserId}/`).update({photoURL:imageURL})  })// save url in Firestore database realtime
+   // save url in cloud Firestore // !!!! IMPORTANT select UPDATE or SET
+  this.database.doc(`ProfileUser/${currentUserId}/`).set({photoURL:imageURL})  })
 }
 
 
