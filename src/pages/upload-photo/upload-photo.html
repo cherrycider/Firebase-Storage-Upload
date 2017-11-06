@@ -1,0 +1,29 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Photo Profile</ion-title>
+    <button ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <!-- image defaut
+    <ion-avatar>
+            <img src="../../assets/user_default_img.jpg" width="180px" height="180px"/>
+    </ion-avatar>
+     -->    
+
+    <img class="img" [src]="(userDetails | async) ?.photoURL" id="img"/>
+    <div padding>
+        <button block ion-button (click)="getMedia()" item-left>UPLOAD</button>
+        <button block ion-button (click)="skip()" item-left>skip</button>
+    </div>
+
+
+</ion-content>
