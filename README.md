@@ -18,7 +18,15 @@ Install Dependences inside folder project
 ```bash
 $ npm install
 ```
-
+Copy your Firebase credenciais in App.Modules.ts
+```
+ apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: ""
+```
 Then, to run it, cd into `mySideMenu` and run:
 
 ```bash
